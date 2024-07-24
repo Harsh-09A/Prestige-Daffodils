@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #ebeaee;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .text-muted {
+        color: #a7a2a2 !important;
+      }
+
+      .full-card {
+        border-radius: 8px;
+        line-height: 22px;
+        padding: 29px;
+        transition: transform 0.5s;
+      }
+
+      .full-card:hover {
+        transform: scale3d(1.006, 1.006, 1);
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.15);
+      }
+
+      .card-img img {
+        width: 75px;
+        height: 75px;
+      }
+
+      .card-details::after {
+        content: "";
+        position: absolute;
+        bottom: -30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-bottom: 2px solid #c0c0c0b8;
+        width: 19px;
+      }
+
+      .card-details .card-title {
+        color: #2e2edc;
+        font-size: 23px;
+      }
+
+      .card-details .card-subtitle {
+        color: #000;
+        font-size: 18px;
+      }
+
+      .items {
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="py-4">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+              <a
+                href="#!"
+                class="full-card d-block bg-white text-center text-capitalize">
+                <div class="card-img rounded-circle mx-auto">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5jjEQqG7kIYRC9dcdAL7QAuCohQPMvThYPA&usqp=CAU"
+                    class="rounded-circle"
+                    alt="profile" />
+                </div>
+                <div class="card-body mt-2 p-0">
+                  <div class="card-details position-relative mb-5">
+                    <h3 class="card-title">cordelia hansen</h3>
+                    <h5 class="card-subtitle">creative director</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="items text-muted">creative services</div>
+                    <div class="items text-muted">
+                      lisbon,
+                      <span class="text-uppercase"> pt </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+              <a
+                href="#!"
+                class="full-card d-block bg-white text-center text-capitalize">
+                <div class="card-img rounded-circle mx-auto">
+                  <img
+                    src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeAHmvY0WVYJyNJ-QC7TLt5FbiFPWO1L7-RA&usqp=CAU"
+                    class="rounded-circle"
+                    alt="profile" />
+                </div>
+                <div class="card-body mt-2 p-0">
+                  <div class="card-details position-relative mb-5">
+                    <h3 class="card-title">sophie keller</h3>
+                    <h5 class="card-subtitle">system owner</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="items text-muted">engineering</div>
+                    <div class="items text-muted">
+                      lisbon,
+                      <span class="text-uppercase"> pt</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+              <a
+                href="#!"
+                class="full-card d-block bg-white text-center text-capitalize">
+                <div class="card-img rounded-circle mx-auto">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4qsUggiGbQ_g2dKutl_37pAfkaKlPKV8Bg&usqp=CAU"
+                    class="rounded-circle"
+                    alt="profile" />
+                </div>
+                <div class="card-body mt-2 p-0">
+                  <div class="card-details position-relative mb-5">
+                    <h3 class="card-title">elnora hart</h3>
+                    <h5 class="card-subtitle">full stack developer</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="items text-muted">engineering</div>
+                    <div class="items text-muted">
+                      melbourne,
+                      <span class="text-uppercase"> au</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+              <a
+                href="#!"
+                class="full-card d-block bg-white text-center text-capitalize">
+                <div class="card-img rounded-circle mx-auto">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXBfyAePZnpHIoU6YsCIxNH3rsnj4CWhIPq1jlcXS2bxs4x_hF96m3CZZHz12KTRm4vY&usqp=CAU"
+                    class="rounded-circle"
+                    alt="profile" />
+                </div>
+                <div class="card-body mt-2 p-0">
+                  <div class="card-details position-relative mb-5">
+                    <h3 class="card-title">donald walker</h3>
+                    <h5 class="card-subtitle">android developer</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="items text-muted">creative services</div>
+                    <div class="items text-muted">
+                      lisbon,
+                      <span class="text-uppercase"> pt</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+              <a
+                href="#!"
+                class="full-card d-block bg-white text-center text-capitalize">
+                <div class="card-img rounded-circle mx-auto">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0shVG9EpaNtsheD90iObe1cY5bRlLSSRn7w&usqp=CAU"
+                    class="rounded-circle"
+                    alt="profile" />
+                </div>
+                <div class="card-body mt-2 p-0">
+                  <div class="card-details position-relative mb-5">
+                    <h3 class="card-title">mason benson</h3>
+                    <h5 class="card-subtitle">uiux designer</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="items text-muted">engineering</div>
+                    <div class="items text-muted">
+                      lisbon,
+                      <span class="text-uppercase"> pt</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+              <a
+                href="#!"
+                class="full-card d-block bg-white text-center text-capitalize">
+                <div class="card-img rounded-circle mx-auto">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXD-DZBCTlXh5eGMfkygWiVLUx_AdlwpXbgA&usqp=CAU"
+                    class="rounded-circle"
+                    alt="profile" />
+                </div>
+                <div class="card-body mt-2 p-0">
+                  <div class="card-details position-relative mb-5">
+                    <h3 class="card-title">mae norris</h3>
+                    <h5 class="card-subtitle">hr manager</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="items text-muted">people ops</div>
+                    <div class="items text-muted">
+                      san francisco,
+                      <span class="text-uppercase">usa</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+              <a
+                href="#!"
+                class="full-card d-block bg-white text-center text-capitalize">
+                <div class="card-img rounded-circle mx-auto">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl5OmD6CO7eGecrEdhiKr_6heM3DYW9wRdUA&usqp=CAU"
+                    class="rounded-circle"
+                    alt="profile" />
+                </div>
+                <div class="card-body mt-2 p-0">
+                  <div class="card-details position-relative mb-5">
+                    <h3 class="card-title">mamie frank</h3>
+                    <h5 class="card-subtitle">graphic, web designer</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="items text-muted">engineering</div>
+                    <div class="items text-muted">
+                      lisbon,
+                      <span class="text-uppercase"> pt</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+              <a
+                href="#!"
+                class="full-card d-block bg-white text-center text-capitalize">
+                <div class="card-img rounded-circle mx-auto">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhj44dtNCnzuhvIPmDKSl5xiQwcexTLwNAuA&usqp=CAU"
+                    class="rounded-circle"
+                    alt="profile" />
+                </div>
+                <div class="card-body mt-2 p-0">
+                  <div class="card-details position-relative mb-5">
+                    <h3 class="card-title">nancy norton</h3>
+                    <h5 class="card-subtitle">front end engineer</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="items text-muted">engineering</div>
+                    <div class="items text-muted">
+                      melbourne,
+                      <span class="text-uppercase"> au</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+              <a
+                href="#!"
+                class="full-card d-block bg-white text-center text-capitalize">
+                <div class="card-img rounded-circle mx-auto">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhsD1_f3r-N2Is6MViS63g9cHUoWCtf4x_sg&usqp=CAU"
+                    class="rounded-circle"
+                    alt="profile" />
+                </div>
+                <div class="card-body mt-2 p-0">
+                  <div class="card-details position-relative mb-5">
+                    <h3 class="card-title">thomas laura</h3>
+                    <h5 class="card-subtitle">back end developer</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="items text-muted">engineering</div>
+                    <div class="items text-muted">
+                      melbourne,
+                      <span class="text-uppercase">au</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+              <a
+                href="#!"
+                class="full-card d-block bg-white text-center text-capitalize">
+                <div class="card-img rounded-circle mx-auto">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUxB7cGptmgX8-2LDWqQoKC2Lx1o5AI3QTnQ&usqp=CAU"
+                    class="rounded-circle"
+                    alt="profile" />
+                </div>
+                <div class="card-body mt-2 p-0">
+                  <div class="card-details position-relative mb-5">
+                    <h3 class="card-title">amili tracy</h3>
+                    <h5 class="card-subtitle">react native developer</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="items text-muted">engineering</div>
+                    <div class="items text-muted">
+                      san francisco,
+                      <span class="text-uppercase"> usa</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+              <a
+                href="#!"
+                class="full-card d-block bg-white text-center text-capitalize">
+                <div class="card-img rounded-circle mx-auto">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoyFYTeDoAWkuss3CVY5vbzWei0RmmMl1osQ&usqp=CAU"
+                    class="rounded-circle"
+                    alt="profile" />
+                </div>
+                <div class="card-body mt-2 p-0">
+                  <div class="card-details position-relative mb-5">
+                    <h3 class="card-title">williams stephen</h3>
+                    <h5 class="card-subtitle">flutter developer</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="items text-muted">engineering</div>
+                    <div class="items text-muted">
+                      lisbon,
+                      <span class="text-uppercase">pt</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+              <a
+                href="#!"
+                class="full-card d-block bg-white text-center text-capitalize">
+                <div class="card-img rounded-circle mx-auto">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdm4iD2MHRm7ym9QoxDtm8puP-9Nl_1_CgTw&usqp=CAU"
+                    class="rounded-circle"
+                    alt="profile" />
+                </div>
+                <div class="card-body mt-2 p-0">
+                  <div class="card-details position-relative mb-5">
+                    <h3 class="card-title">johnson melissa</h3>
+                    <h5 class="card-subtitle">WordPress developer</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="items text-muted">engineering</div>
+                    <div class="items text-muted">
+                      melbourne,
+                      <span class="text-uppercase"> au</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
